@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare</title>
+    <!-- CSS con BOOSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+    <!--Barra de NAVEGACIÓN con BOOSTRAP-->
+    <nav class="navbar navbar-light" style="background-color:lightseagreen;">
+        <img class="logo" src="img/logo.jpg" alt="logo">
+        <a class="navbar-brand">Clínica Veterinaria <strong>PetCare</strong></a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-whiteblue my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+    </nav>
+
+    <!--Barra de NAVEGACIÓN con BOOSTRAP-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/conejos.png" class="d-block w-100" alt="conejos">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Nos dedicamos al cuidado y atención de sus mascotas</h5>
+              <p>Cuidar de sus mascotas es nuestra pasión.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/gatito.jpg" class="d-block w-100" alt="gatito">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Les brindamos todas los cuidados y el cariño</h5>
+              <p>Que su engreído merece y necesite.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/perro.jpg" class="d-block w-100" alt="perro">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Confíe en nuestro profesionalismo</h5>
+              <p>En nuestras manos sus  engreidos tendrán la mejor atención.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+<!--inicio de CARDS con BOOSTRAP-->
+<div id="tarjetas">
+  <div class="row row-cols-1 row-cols-md-2">
+    <div class="col mb-4">
+      <div class="card">
+        <img src="img/sede_Chaclacayo.jpg" class="card-img-top" alt="sede_Chaclacayo">
+        <div class="card-body">
+          <h5 class="card-title">SEDE CHACLACAYO</h5>
+          <p class="card-text">Av. Los Sauces 9854, Chaclacayo<br>Whatsapp: 999 888 777<br>Teléfono: 01 9874 561</p>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card">
+        <img src="img/sede_Ate.jpg" class="card-img-top" alt="sede_Ate">
+        <div class="card-body">
+          <h5 class="card-title">SEDE ATE</h5>
+          <p class="card-text">Av. Metropolitana 651, Ate Vitarte<br>Whatsapp: 988 777 666<br>Teléfono: 01 3654 236</p>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card">
+        <img src="img/sede_La_Molina.jpg" class="card-img-top" alt="sede_La_Molina">
+        <div class="card-body">
+          <h5 class="card-title">SEDE LA MOLINA</h5>
+          <p class="card-text">Av. Los Ingenieros 354, La Molina<br>Whatsapp: 977 666 555 <br>Teléfono: 01 3457 211</p>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card">
+        <img src="img/sede_San_miguel.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">SEDE SAN MIGUEL</h5>
+          <p class="card-text">Av.Universitaria 9874, San Miguel<br>Whatsapp: 966 555 444<br>Teléfono: 01 3214 568</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!--FORMS-->
+<div class="formulario">
+  <h4>Reserve su cita</h4><br>
+  <form class="needs-validation" novalidate>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationCustom01">Nombres</label>
+        <input type="text" class="form-control" id="validationCustom01" value="Nombres..." required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationCustom02">Apellidos</label>
+        <input type="text" class="form-control" id="validationCustom02" value="Apellidos..." required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationCustom03">Dirección</label>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+          Please provide a valid city.
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom04">Sede</label>
+        <select class="custom-select" id="validationCustom04" required>
+          <option selected disabled value="">Seleccione una sede...</option>
+          <option>Ate</option>
+          <option>Chaclacayo</option>
+          <option>La Molina</option>
+          <option>San miguel</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a valid state.
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom05">Teléfono</label>
+        <input type="text" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+          Please provide a valid number.
+        </div>
+      </div>
+    </div>
+    
+    <button class="btn btn-primary" type="submit">Reservar</button>
+  </form>
+  
+  <script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+  </script>
+</div>
+<!--FOOTER-->
+<div class="card-body">
+  <h5 class="card-title">Estamos a su servicio en cualquiera de nuestras sedes</h5>
+  <p class="card-text">atención de Lunes a Sábado de 9am-4pm</p>
+  <img class="logo" src="img/logo.jpg" alt="logo">
+</div>
+</div>
+
+<!--Link de JAVA/BOOSTRAP-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="JS/script.js"></script>
+</body>
+</html>
